@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link rel = "icon" href ="{{url_for('static',filename='images/logo.png')}}" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>GPA Calculator</title>
+</head>
+
+<body>
+    <div class="question_head">
+        <h1 id="question_h1">GPA Calculator</h1>
+    </div>
+    <div class="container-fluid" style="margin: auto; text-align: center;">
+        <div id="questiondiv">
+
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-primary" id="Add">Add Subject</button>
+            <button class="btn btn-primary" id="Remove">Remove Subject</button>
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-success" id="Submit">Calculate</button>
+        </div>
+        <div class="loadingio-spinner-rolling-5mktibnny8u" id="loading" hidden>
+            <div class="ldio-nys8r3mt4dm">
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="resultdiv" id="resultdiv" hidden>
+            <fieldset>
+                <legend id = "result"></legend>
+                  
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{url_for('static',filename = 'js/index.js')}}"></script>
+
+</body>
+</html>
